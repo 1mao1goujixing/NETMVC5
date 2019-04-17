@@ -1,0 +1,36 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link href="~/Js/formSelects-v4.css" rel="stylesheet" />
+    <script src="~/Js/layui/layui.all.js"></script>
+    <script src="~/Js/formSelects-v4.js"></script>
+  
+</head>
+<body>
+    <div>
+        <from>
+            <input type="text" value="22"/>
+          <h2>@ViewBag.ss</h2>
+            <select name="city" xm-select="select10_1">
+                <option value="1" disabled="disabled">北京</option>
+                <option value="2" selected="selected">上海</option>
+                <option value="3">广州</option>
+                <option value="4" selected="selected">深圳</option>
+                <option value="5">天津</option>
+            </select>
+        </from>
+    </div>
+</body>
+</html>
+<script type="text/javascript">
+    var formSelects = layui.fromSelects;
+    formSelects.render("select10_1");
+</script>
